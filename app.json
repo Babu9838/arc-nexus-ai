@@ -1,0 +1,23 @@
+{
+  "name": "arc-multichain-agent",
+  "description": "An advanced, premium AI-powered dApp designed to control and route multi-chain USDC transactions seamlessly through natural language commands.",
+  "keywords": [
+    "web3",
+    "ai-agent",
+    "usdc",
+    "multichain",
+    "arc-network",
+    "defi"
+  ],
+  "repository": "https://github.com/YOUR_USERNAME/YOUR_REPO_NAME",
+  "logo": "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO_NAME/main/assets/logo.svg",
+  "success_url": "/",
+  "scripts": {},
+  "env": {
+    "NODE_ENV": {
+      "description": "The environment to run the application in.",
+      "value": "production"
+    }
+  },
+  "stack": "container"
+}
