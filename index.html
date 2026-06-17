@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arc Nexus AI | Wallet</title>
-    <!-- Tailwind CSS for Styling -->
+    <title>Arc Nexus AI | Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-white font-sans">
 
     <div class="max-w-2xl mx-auto p-6 min-h-screen flex flex-col">
-        <!-- Header -->
-        <header class="mb-8 text-center">
-            <h1 class="text-3xl font-bold text-blue-400">Arc Nexus AI</h1>
-            <p class="text-slate-400">Unified Control Layer for Base/Arc</p>
+        <!-- Updated Header with 1000227687_2.jpg -->
+        <header class="mb-8 text-center flex flex-col items-center justify-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800">
+                <img src="1000227687_2.jpg" alt="Arc Nexus Logo" class="w-full h-full object-contain">
+            </div>
+            <div>
+                <h1 class="text-3xl font-bold text-blue-400">Arc Nexus AI</h1>
+                <p class="text-slate-400">Unified Control Layer for Base/Arc</p>
+            </div>
         </header>
 
         <!-- Chat Area -->
@@ -38,13 +42,10 @@
 
             if (message.trim() === "") return;
 
-            // Clear placeholder
             if (chatBox.innerHTML.includes("Chat starts here...")) chatBox.innerHTML = "";
 
-            // User Message
             chatBox.innerHTML += `<div class="mb-4 text-right"><span class="bg-blue-900 px-4 py-2 rounded-lg">${message}</span></div>`;
 
-            // Simulate AI Response
             setTimeout(() => {
                 chatBox.innerHTML += `<div class="mb-4 text-left"><span class="bg-slate-600 px-4 py-2 rounded-lg">AI: Processing your request on Arc Network...</span></div>`;
                 chatBox.scrollTop = chatBox.scrollHeight;
